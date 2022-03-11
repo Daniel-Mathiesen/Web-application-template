@@ -7,28 +7,31 @@ import { faGear } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 
 const Navbar = () => {
+  useEffect(() => {
+    localStorage.getItem("selected") &&
+      document
+        .getElementById(localStorage.getItem("selected"))
+        .classList.add("active");
+  }, []);
 
-    useEffect(()=>{
-        localStorage.getItem("selected") && document.getElementById(localStorage.getItem("selected")).classList.add("active");
-    },[])
-
-    function activeLink(e) {
-
-    
+  function activeLink(e) {
     let list = document.querySelectorAll(".list");
-
 
     list.forEach((item) => item.classList.remove("active"));
 
     e.currentTarget.classList.add("active");
 
-    localStorage.setItem("selected", e.currentTarget.innerText)
+    localStorage.setItem("selected", e.currentTarget.innerText);
   }
 
   return (
     <div className="navigation">
       <ul>
-        <li id="Home" className={`list${localStorage.getItem("selected") ? '' : ' active'}`} onClick={activeLink}>
+        <li
+          id="Home"
+          className={`list${localStorage.getItem("selected") ? "" : " active"}`}
+          onClick={activeLink}
+        >
           <a href="#">
             <span className="icon">
               <FontAwesomeIcon icon={faHouseChimney} />
