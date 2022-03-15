@@ -1,6 +1,10 @@
 const ProfilePage = () => {
     return (  
-        <div>Hello this is the profile page :P</div>
+        <div className="Wrapper flex w-full h-full justify-center">
+            <div className="Main__Background w-full h-full absolute text-center top-10">
+                <h1>Profile</h1>
+            </div>
+        </div>
     );
 }
  

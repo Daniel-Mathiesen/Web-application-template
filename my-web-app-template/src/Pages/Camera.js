@@ -1,6 +1,10 @@
 const CameraPage = () => {
     return (  
-        <div>Hello this is the camera page B)</div>
+        <div className="Wrapper flex w-full h-full justify-center">
+            <div className="Main__Background w-full h-full absolute text-center top-10">
+                <h1>Camera</h1>
+            </div>
+        </div>
     );
 }
  

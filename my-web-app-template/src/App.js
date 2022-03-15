@@ -14,7 +14,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <Navbar />
       <div className="App">
         <Routes>
           <Route exact path="/" element={<HomePage />} />
@@ -24,6 +23,7 @@ function App() {
           <Route exact path="/settings" element={<SettingsPage />} />
         </Routes>
       </div>
+        <Navbar />
     </Router>
   );
 }

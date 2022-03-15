@@ -1,6 +1,10 @@
 const HomePage = () => {
     return (  
-        <div >Hello this is the home page :)</div>
+        <div className="Wrapper flex w-full h-full justify-center">
+            <div className="Main__Background w-full h-full absolute text-center top-10">
+                <h1>Home</h1>
+            </div>
+        </div>
     );
 }
  

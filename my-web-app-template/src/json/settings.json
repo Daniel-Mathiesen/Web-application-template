@@ -1,0 +1,35 @@
+{
+    "settings":[
+        {
+            "settingName": "General",
+            "iconName": "faGears",
+            "iconLink": "../Assets/svgs/bell-solid.svg", 
+            "id": 1
+        },
+        {
+            "settingName": "Appearance",
+            "iconLink": "faPalette",
+            "id": 2 
+        },
+        {
+            "settingName": "Security and login",
+            "iconLink": "faUserShield",
+            "id": 3 
+        },
+        {
+            "settingName": "Privacy",
+            "iconLink": "faUserSecret",
+            "id": 4 
+        },
+        {
+            "settingName": "Notifications",
+            "iconLink": "faBell",
+            "id": 5 
+        },
+        {
+            "settingName": "Cookies",
+            "iconLink": "faCookie",
+            "id": 6 
+        }
+    ]
+}

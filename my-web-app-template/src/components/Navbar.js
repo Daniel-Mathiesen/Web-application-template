@@ -1,9 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouseChimney } from "@fortawesome/free-solid-svg-icons";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { faMessage } from "@fortawesome/free-solid-svg-icons";
-import { faCamera } from "@fortawesome/free-solid-svg-icons";
-import { faGear } from "@fortawesome/free-solid-svg-icons";
+import { faHouseChimney, faUser, faMessage, faCamera, faGear } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -26,9 +22,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex flex-col-reverse h-full">
-    <div className="navigation">
-      <ul>
+    <div className="flex justify-center h-full">
+    <div className="navigation mb-[2.25vw] self-end">
+      <ul id="icons" className="text-[100%] w-full flex justify-evenly">
         <li
           id="Home"
           className={`list${localStorage.getItem("selected") ? "" : " active"}`}
